@@ -1,0 +1,24 @@
+<div id="header">
+	<div class="headerWrapper">
+		<div class="social">
+			<ul>
+				<li><%= image_tag("SocialIcons/facebook.png", :width => "20") %><%= link_to "Facebook", "#" %></li>
+				<li><%= image_tag("SocialIcons/twitter.png", :width => "20") %><%= link_to "Twitter", "#" %></li>
+				<li><%= image_tag("SocialIcons/vimeo.png", :width => "20") %><%= link_to "Vimeo", "#" %></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="logo"> 
+			<%= link_to image_tag("transLogo.png", :width => "140"), refinery.root_path %>
+       	</div>
+    </div>	
+</div>
+<div class="clear"></div>
+<div class="topMenu">
+	<%= render(:partial => "/refinery/menu", :locals => {
+	             :dom_id => 'menu',
+	             :css => 'menu'
+	           }) %>
+</div>
+
+<div class="clear"></div>
