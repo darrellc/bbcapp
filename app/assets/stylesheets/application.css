@@ -11,3 +11,105 @@
  *= require_self
  *= require_tree .
  */
+
+
+
+/******************************************/
+
+/****MEDIA QUERIES*****/
+/***********************/
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 980px) {
+	
+/* Styles */
+	#content{padding:0px;}
+	
+}
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 932px) {
+/* Styles */
+	#Buttons p img{width:200px;height:134px;padding:8px;}
+	#imageFader{
+		display:none;
+	}	
+}
+/*Mid range resolution check */
+@media screen and (max-width:750px){
+	body{padding:0;}
+	.social{right:0px;top:0px;}
+	.social img{clear:both;}
+	#Buttons p img{width:150px;height:100px;padding:5px;}
+	.topMenu ul li ul li a{font-size:12px;}
+}
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width: 630px) {
+/* Styles */
+	body{padding:0;}
+	#Buttons p img{padding:3px;}
+	.headerWrapper{width:100%;}
+	#header{
+		width:100%;
+	}
+	.logo{
+		clear:both;
+		position:relative;
+	}
+	.topMenu ul li a{padding:7px 5px 10px 5px;font-size:12px;}
+	
+	.topMenu{
+		width:100%;
+	}
+	#contentWrapper{width:100%;margin:auto;}
+	#content{width:100%;margin:auto;margin-top:25px;}
+	
+	
+	#footer{min-width:100px;}
+	.topMenu ul li ul li a{font-size:9px;}
+}
+@media screen and (max-width:500px){
+	body{padding:0;}
+	#Buttons{padding:0px 0px 15px 0px;}
+	#Buttons .left{width:100%;}
+	#Buttons .middle{width:100%;}
+	#Buttons .right{width:100%;}
+	#Buttons p img{
+		width:300px;
+		height:auto;
+		margin:10px 0px;
+		box-shadow:none;
+	}
+}
+@media screen and (max-width:460px){
+	body{padding:0;}
+	.headerWrapper{width:100%;min-width:320px;}
+	#header{
+		width:100%;
+		min-width:320px;
+		height:auto;
+	}
+	
+	.logo img{width:100px;left:0;padding:10px 0px 10px 0px;}
+	.topMenu ul li{padding:0;}
+	.topMenu ul li a{padding: 3px 1px 3px 1px;font-size:9px;}
+	.topMenu ul{width:100%; margin:auto;min-width:320px}
+	#imageFader{
+		display:none;
+		position:absolute;
+	}
+	.topMenu{
+		width:100%;
+		min-width:320px;
+		top:60px;
+	}
+	.topMenu ul li a{padding-bottom:10px;}
+	.headerWrapper .social{left:0px;position:relative;height:23px;}
+	.headerWrapper .social ul li{width:33%;padding:0px;text-align:center;}
+	#contentWrapper{width:100%;min-width:320px;margin:auto;}
+	#content{width:100%;min-width:320px;margin:auto;margin-top:25px;}
+	#footer{min-width:100px;position:relative;}
+	#footer a{clear:both;}
+	#footer .custom{width:220px;position:initial;}
+	#footer p{float:left;}
+	#footer #footerSloganImage{right:0px;bottom:0px;}
+}
