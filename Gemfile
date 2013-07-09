@@ -15,7 +15,6 @@ group :production do
   gem 'pg'
 end
 
-gem "fog"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -34,13 +33,15 @@ gem 'jquery-rails', '~> 2.0.0'
 # gem 'thin'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'unicorn'
+gem 'unicorn', :platform => :ruby
+#gem 'bcrypt-ruby', :require => 'bcrypt'
+
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -63,6 +64,3 @@ gem 'heroku'
 
 # Fog allows you to use S3 assets (added for Heroku)
 gem 'fog'
-
-# Postgres support (added for Heroku)
-gem 'pg'

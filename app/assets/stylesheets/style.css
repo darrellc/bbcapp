@@ -183,16 +183,17 @@ Class name automatically added to element */
 }
 
 /* Side menu */
-.dropdown-menu ul{list-style:none;}
-.dropdown-menu li a{padding:6px 0px;text-align:center;color:#111111;}
-.dropdown-menu li.selected a{background:#424242;}
-.dropdown-menu li.selected a:hover{background-color:#424242;color:white;}
-.dropdown-menu li a:hover{background:none;color:black;}
-.dropdown-menu li ul li a{padding:0px 3px;}
-.dropdown-menu li ul li a:hover{display:block;background:#111111;color:white;}
-.dropdown-menu li.selected li a{background:white;} 
-.dropdown-menu li ul li.selected a{color:#902f2a;}
-
+.dropdown-menu ul{list-style:none;margin:0px;}
+.dropdown-menu li{border-bottom:1px solid #ccc;}
+.dropdown-menu li:last-child{border-bottom:none;}
+.dropdown-menu li a{padding:3px 5px;text-align:center;color:#902f2a;display:block;}
+.dropdown-menu li a:hover{background:none;color:#902f2a;}
+.dropdown-menu li.selected a{text-decoration:none;}
+.dropdown-menu li a:hover{color:black;}
+.dropdown-menu li ul li{border-bottom:none;padding-bottom:0px;}
+.dropdown-menu li ul li a{padding:0px 3px;color:#111111;}
+.dropdown-menu li ul li a:hover{display:block;background:#424242;color:white;}
+.dropdown-menu li ul li.selected a{color:white;background:#424242;}
 
 #content .btn-group{position:absolute;top:10px;right:10px;}
 #content h3{font-family:"Times New Roman";font-size:23px;text-align:center;}
