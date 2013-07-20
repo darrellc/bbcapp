@@ -21,37 +21,50 @@ $(document).ready(function(){
 	//$("#videoOverlay").fancybox().trigger('click');
 	var child = $(".topMenu .menu").children();
 	list = $(child).children();
-	for(i=0;i<list.length;i++){
-		if($(list[i]).hasClass("selected")){
-			console.log($(list[i]).children("ul"));
-			$(list[i]).children("ul").show();
+	$(list).each(function(){
+		if($(this).hasClass("selected") ){
+			$(this).children("ul").show();
 		}
-		anchorTag = $(list[i]).children()[0];
-		$(anchorTag).bind("mouseleave", function(){
-			if(!$(this).parent().hasClass("selected")){
-				animateDown(this);
-			}
-		});
+		var anchorTag = $(this).children()[0];
 		$(anchorTag).bind("mouseenter", function(){
-			animateUp(this);
+			if(!$(this).parent().hasClass("selected") )
+				animateUp(this);
+			
+		});
+		$(anchorTag).bind("mouseleave", function(){
+			if(!$(this).parent().hasClass("selected") )
+				animateDown(this);			
 		});
 		$(anchorTag).bind("click", function(){
 			if($(this).next().is(":visible")){
-				animateDown(list[i]);
-				$(this).next().slideUp();
-				$(this).removeClass("selected");
+				if(!$(this).parent().hasClass("selected") ){
+					animateDown(this);
+					$(this).next().slideUp();	
+				}					
 			}else{
 				var ul = $(".topMenu li ul");
 				$(ul).slideUp("fast");
+				var count = 0;
 				$(this).next().slideDown();
-				$(this).addClass("selected");					
+				animateUp(this);
+				$(this).parent().addClass("selected");
+				$(list).each(function(){
+					console.log(count);
+					animateDown($(this).children()[0]);
+					$(this).removeClass("selected");
+					count += 1;
+				});
+				$
 			}
-			return false;
 		});
-		var childListItem = $(anchorTag).next().children();
-		var percent = 100 / childListItem.length;
-		$(childListItem).css("width", percent.toString() + "%");	
-	}
+		var w = $(window).width();
+		console.log(w);
+		if(w > 460){
+			var childListItem = $(anchorTag).next().children();
+			var percent = 100 / childListItem.length;
+			$(childListItem).css("width", percent.toString() + "%");
+		}
+	});
 	
 	$("#homePageCarousel").flexslider({
 		animation: "slide",
@@ -86,7 +99,7 @@ $(document).ready(function(){
 
 function animateDown(e){
 	$(e).animate({ marginTop: '0px', paddingBottom: '10px'}, 100, "swing");
-	$(e).css("borderTopColor", "#111111");
+	$(e).css("borderTopColor", "#2a1f17");
 }
 function animateUp(e){
 	$(e).animate({ marginTop: '-5px', paddingBottom: '15px'}, 100, "swing");
