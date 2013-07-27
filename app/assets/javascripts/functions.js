@@ -27,34 +27,43 @@ $(document).ready(function(){
 		}
 		var anchorTag = $(this).children()[0];
 		$(anchorTag).bind("mouseenter", function(){
-			if(!$(this).parent().hasClass("selected") )
-				animateUp(this);
+			if(!$(this).parent().hasClass("selected") ){
+				if(!$(this).parent().hasClass("active") ){
+					animateUp(this);
+				}					
+			}
+				
 			
 		});
 		$(anchorTag).bind("mouseleave", function(){
-			if(!$(this).parent().hasClass("selected") )
-				animateDown(this);			
+			if(!$(this).parent().hasClass("selected") ){
+				if(!$(this).parent().hasClass("active") ){
+					animateDown(this);
+				}					
+			}			
 		});
 		$(anchorTag).bind("click", function(){
 			if($(this).next().is(":visible")){
 				if(!$(this).parent().hasClass("selected") ){
 					animateDown(this);
-					$(this).next().slideUp();	
+					$(this).next().slideUp();
+					$(this).parent().removeClass("active");	
 				}					
 			}else{
+				$(list).each(function(){
+					if( !$(this).hasClass("selected") ){
+						animateDown($(this).children()[0]);
+					}
+					$(this).removeClass("active");
+				});
 				var ul = $(".topMenu li ul");
 				$(ul).slideUp("fast");
-				var count = 0;
-				$(this).next().slideDown();
-				animateUp(this);
-				$(this).parent().addClass("selected");
-				$(list).each(function(){
-					console.log(count);
-					animateDown($(this).children()[0]);
-					$(this).removeClass("selected");
-					count += 1;
-				});
-				$
+				$(this).parent().addClass("active");
+				$(this).next().slideDown();				
+				animateUp(this);				
+				
+				
+				
 			}
 		});
 		var w = $(window).width();
