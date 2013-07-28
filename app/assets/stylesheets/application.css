@@ -31,9 +31,18 @@ ul{list-style:circle;}
 *{padding:0px;margin:0px;}
 img{border:none;margin:0;padding:0;}
 
-body{background-color: #ddba50;background-repeat:repeat;background-image: url(/assets/Backgrounds/paisley.png);}
-#header{width:100%;margin:auto;background:url(/assets/Backgrounds/parchment.jpg) repeat-x;}
-.headerWrapper{width:100%;margin:auto;position:relative;max-width:1008px;}
+body{background-color:#fff;;background-repeat:repeat;}
+#header{
+	width:100%;
+	margin:auto;
+	background:url(/assets/Backgrounds/parchment.jpg) repeat; /* Old browsers */
+}
+.headerWrapper{
+	width:100%;
+	margin:auto;
+	position:relative;
+	max-width:1008px;
+}
 .headerWrapper img{padding:20px 35px;width:140px;}
 .headerWrapper .headerTop{padding:5px 0px; font-family:Georgia, "Times New Roman", Times, serif;border-top:6px solid #ddba50;background:white;-webkit-box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, .8);box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, .8);}
 .headerWrapper .headerTop li{font-style:italic;padding:0px 20px;color:#002240;}
@@ -61,7 +70,6 @@ body{background-color: #ddba50;background-repeat:repeat;background-image: url(/a
 .topMenu{
 	width:100%;
 	margin:auto;
-	background:#2a1f17;
 }
 .topMenu ul{list-style:none;width:100%;max-width:1008px;margin:auto;position:relative;background:#2a1f17;}
 .topMenu ul li{
@@ -79,32 +87,31 @@ body{background-color: #ddba50;background-repeat:repeat;background-image: url(/a
     filter: dropshadow(color=#cdd577, offx=2, offy=2);
 	display:block;
 	text-transform:uppercase;
-	background:#2a1f17;
 	border-top:5px solid #2a1f17;
+	-webkit-box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, .5);        
+    box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, .5);
 }
-.topMenu ul li a:hover{color:white;background:#2a1f17;}
+.topMenu ul li a:hover{color:white;}
 .topMenu ul li.selected a{color:white;margin-top:-5px;border-top:5px solid #902f2a;padding-bottom:15px;}
 .topMenu ul li.active a{color:white;margin-top:-5px;border-top:5px solid #902f2a;padding-bottom:15px;}
 .topMenu ul li.active li a{border:none;color:white;margin:0;}
 .topMenu ul li.selected li a{border:none;margin-top:0px;padding:10px;}
 .topMenu ul li ul{position:absolute;width:100%;display:none;left:0px;background:none;}
-.topMenu ul li ul li a{text-transform:none;font-size:14px;padding:5px;font-variant:normal;background:#2a1f17;color:#bebebe;border:none;opacity:0.7;filter:alpha(opacity=70); /* For IE8 and earlier */}
-.topMenu ul li ul li a:hover{text-decoration:underline;margin:auto;color:white;background:#2a1f17;opacity:1.0;filter:alpha(opacity=100);}
+.topMenu ul li ul li a{text-transform:none;font-size:14px;padding:5px;font-variant:normal;background:#2a1f17;color:#bebebe;border:none;opacity:0.7;filter:alpha(opacity=70); /* For IE8 and earlier */box-shadow:none;-webkit-box-shadow:none;}
+.topMenu ul li ul li a:hover{text-decoration:underline;margin:auto;color:white;}
 .topMenu ul li ul li.selected a{color:white;background:#2a1f17;text-decoration:underline;padding-bottom:10px;}
 .maximenuck2{width:150px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;padding-bottom:10px;}
 .maximenuck2 li a{clear:both;font-size:13px;}
 .maximenuck2 li a:hover{color:#585858;}
 .topMenu .social{position:absolute;right:13px;top:5px;}
-#imageFader{position:absolute;right:0px;top:20px;}
-#imageFader img{position:absolute;top:0;left:0;z-index:8;opacity:100.0;}
-#imageFader IMG.active {z-index:10;opacity:1.0;}
-#imageFader IMG.last-active {z-index:9;}
+#middleBackground{width:100%;background:url(/assets/Backgrounds/middleBackground.jpg) repeat-x;height:500px;position:absolute;z-index:-100;}
 #contentWrapper{
 	width:100%;
 	margin:auto;
 	margin-top:45px;
 	/*-webkit-box-shadow:  0px 10px 20px 10px rgba(0, 0, 0, .3);
 	box-shadow:  0px 10px 20px 10px rgba(0, 0, 0, .3);*/
+	
 }
 #content{position:relative;z-index:100;width:100%;max-width:968px;margin-top:45px;padding:20px;background:white;margin:auto;-webkit-box-shadow:  0px 0px 15px 5px rgba(0, 0, 0, .6);box-shadow:  0px 0px 15px 5px rgba(0, 0, 0, .6);}
 #content p{font-size:13px;line-height: 25px;font-family:'Ms Sans Serif';}
