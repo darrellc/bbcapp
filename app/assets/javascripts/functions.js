@@ -79,8 +79,8 @@ $(document).ready(function(){
 		animation: "slide",
 		directionNav: false,
 		controlNav: false,
-		animationLoop: false,
-		slideshow: false,
+		animationLoop: true,
+		slideshow: true,
 		itemWidth: 210,
 		itemMargin: 5,
 		asNavFor: "#homePageSlider"
@@ -89,8 +89,8 @@ $(document).ready(function(){
 	$("#homePageSlider").flexslider({
 		animation: "slide",
 		controlNav: false,
-		animationLoop: false,
-		slideshow: false,
+		animationLoop: true,
+		slideshow: true,
 		sync: "#homPageCarousel"
 	});
 	
