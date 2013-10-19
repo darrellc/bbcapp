@@ -95,7 +95,7 @@ body{background-color:#fff;;background-repeat:repeat;}
 .topMenu ul li.first li a{box-shadow:none;-webkit-box-shadow:none;}
 .topMenu ul li.last a{box-shadow: 8px 0px 12px -6px rgba(0,0,0,0.7);-webkit-box-shadow: 8px 0px 12px -6px rgba(0,0,0,0.7);}
 .topMenu ul li.selected a{color:white;margin-top:-5px;border-top:5px solid #902f2a;padding-bottom:15px;}
-.topMenu ul li.active a{color:white;margin-top:-5px;border-top:5px solid #902f2a;padding-bottom:15px;}
+.topMenu ul li.active a{color:white;margin-top:-5px;border-top:5px solid #902f2a;}
 .topMenu ul li.active li a{border:none;color:white;margin:0;}
 .topMenu ul li.selected li a{border:none;margin-top:0px;padding:4px;}
 .topMenu ul li ul{position:absolute;top:53px;width:100%;display:none;left:0px;background:none;}
@@ -178,6 +178,9 @@ body{background-color:#fff;;background-repeat:repeat;}
 #content .inner ul{list-style-image:url("marker.jpg");margin-left:50px;margin-top:15px;}
 #content .inner h3{margin-bottom:10px;font-size:20px;font-family:"Times New Roman";font-weight:bold;color:#6a5134;}
 #content  h2{color: #333;font-variant:small-caps;font-family:'Times New Romans';font-size:29px;width:96%;margin:auto;filter: dropshadow(color=#3b3b3b, offx=4, offy=4);text-align:center;}
+/****FLEXSLIDER******/
+#content .inner .flexslider ul{margin:0;}
+#content .inner .flexslider img{background:none;padding:0;box-shadow:none;-webkit-box-shadow:none;;margin:0;}
 /******************CALENDAR PAGE***************/
 #gcalendar_component{padding:20px;}
 #gcalendar_component .fc-button{background-color:#FBFFCB;}
