@@ -107,7 +107,7 @@ $(document).ready(function(){
 });
 
 function animateDown(e){
-	$(e).animate({ marginTop: '0px', paddingBottom: '10px'}, 100, "swing");
+	$(e).animate({ marginTop: '0px', paddingBottom: '9px'}, 100, "swing");
 	$(e).css("borderTopColor", "#2a1f17");
 }
 function animateUp(e){
