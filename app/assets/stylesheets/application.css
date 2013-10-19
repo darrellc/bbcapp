@@ -100,7 +100,7 @@ body{background-color:#fff;;background-repeat:repeat;}
 .topMenu ul li.selected li a{border:none;margin-top:0px;padding:4px;}
 .topMenu ul li ul{position:absolute;top:53px;width:100%;display:none;left:0px;background:none;}
 .topMenu ul li ul li a{box-shadow:none;-webkit-box-shadow:none;text-transform:none;font-size:15px;padding:5px;font-variant:normal;background:#2a1f17;color:#bebebe;border:none;opacity:0.7;filter:alpha(opacity=70); /* For IE8 and earlier */box-shadow:none;-webkit-box-shadow:none;}
-.topMenu ul li ul li a:hover{margin:auto;color:white;border-bottom:10px solid #black;}
+.topMenu ul li ul li a:hover{margin:auto;color:white;border-bottom:10px solid black;}
 .topMenu ul li ul li.selected a{color:white;background:#2a1f17;padding-bottom:10px;}
 .maximenuck2{width:150px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;padding-bottom:10px;}
 .maximenuck2 li a{clear:both;font-size:13px;}
