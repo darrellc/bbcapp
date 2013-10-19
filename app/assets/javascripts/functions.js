@@ -111,6 +111,6 @@ function animateDown(e){
 	$(e).css("borderTopColor", "#2a1f17");
 }
 function animateUp(e){
-	$(e).animate({ marginTop: '-5px', paddingBottom: '15px'}, 100, "swing");
+	$(e).animate({ marginTop: '-5px', paddingBottom: '14px'}, 100, "swing");
 	$(e).css("borderTopColor", "#902f2a");
 }
