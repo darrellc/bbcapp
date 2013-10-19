@@ -8,7 +8,7 @@ gem 'rails', '3.2.13'
 
 
 group :development, :test do
-  gem "sqlite3"
+  gem "pg"
 end
 
 group :production do
@@ -63,4 +63,6 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 gem 'heroku'
 
 # Fog allows you to use S3 assets (added for Heroku)
-gem 'fog'
+group :production do
+	gem 'fog'
+end
