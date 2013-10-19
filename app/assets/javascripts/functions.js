@@ -79,7 +79,8 @@ $(document).ready(function(){
 		animation: "slide",
 		directionNav: false,
 		controlNav: false,
-		animationLoop: true,
+		animationLoop: false,
+		slideshow: false,
 		itemWidth: 210,
 		itemMargin: 5,
 		asNavFor: "#homePageSlider"
@@ -88,18 +89,18 @@ $(document).ready(function(){
 	$("#homePageSlider").flexslider({
 		animation: "slide",
 		controlNav: false,
-		animationLoop: true,
-		slideshow: true,
+		animationLoop: false,
+		slideshow: false,
 		sync: "#homPageCarousel"
 	});
 	
-	$('.flexslider').flexslider({
-	    animation: "slide",
-	    smoothHeight: true,
-	    directionNav: true,
-	    controlNav: false,
-	    slideshow: false
-	});
+	//$('.flexslider').flexslider({
+	//    animation: "slide",
+	//    smoothHeight: true,
+	//    directionNav: true,
+	//    controlNav: false,
+	//    slideshow: false
+	//});
 	
 	
 	var a = $("#sideMenuButton");
