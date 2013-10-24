@@ -35,7 +35,7 @@ body{background-color:#fff;;background-repeat:repeat;}
 #header{
 	width:100%;
 	margin:auto;
-	background:url(/assets/Backgrounds/parchment.jpg) repeat; /* Old browsers */
+	background:url(/assets/Backgrounds/header_bg.jpg) repeat; /* Old browsers */
 }
 .headerWrapper{
 	width:100%;
