@@ -94,6 +94,14 @@ $(document).ready(function(){
 		sync: "#homPageCarousel"
 	});	
 	
+	$('.photoAlbumSlider').flexslider({
+	    animation: "slide",
+	    smoothHeight: true,
+	    directionNav: true,
+	    controlNav: false,
+	    slideshow: false
+	});
+	
 	var a = $("#sideMenuButton");
 	$(a).dropdown("toggle");	  
 });
