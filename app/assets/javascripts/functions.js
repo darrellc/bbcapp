@@ -92,16 +92,7 @@ $(document).ready(function(){
 		animationLoop: true,
 		slideshow: true,
 		sync: "#homPageCarousel"
-	});
-	
-	//$('.flexslider').flexslider({
-	//    animation: "slide",
-	//    smoothHeight: true,
-	//    directionNav: true,
-	//    controlNav: false,
-	//    slideshow: false
-	//});
-	
+	});	
 	
 	var a = $("#sideMenuButton");
 	$(a).dropdown("toggle");	  
