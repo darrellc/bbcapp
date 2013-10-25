@@ -40,7 +40,7 @@ Refinery::PagesController.class_eval do
       picture[:link] = a["link"]
       
       #Get facebook photos
-      uri = URI.parse("https://graph.facebook.com/#{id}/photos")
+      uri = URI.parse("https://graph.facebook.com/#{id}/photos?limit=10")
       
       request = Net::HTTP::Get.new(uri.request_uri)
       response = http.request(request)
