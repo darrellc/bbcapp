@@ -112,7 +112,7 @@ $(document).ready(function(){
 			$(p).animate({left: "0px"}, 300);
 	});
 	var menu = $("#menuPanel");
-	$(menu).css("min-height", $(window).height());
+	$(menu).css("height", $(window).height());
 	
 	$(document).click(function (e) {
 		var p = $("#menuPanelButton").parent();
