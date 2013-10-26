@@ -133,9 +133,10 @@ body{background-color:#fff;;background-repeat:repeat;}
 			li a{box-shadow:none;-webkit-box-shadow:none;}
 		}
 		li.last a{box-shadow: 8px 0px 12px -6px rgba(0,0,0,0.7);-webkit-box-shadow: 8px 0px 12px -6px rgba(0,0,0,0.7);}
-		li.selected a{color:white;margin-top:-5px;border-top:5px solid #902f2a;
-			li a{border:none;margin-top:0px;padding:4px;} 
-		}
+		li.selected{
+			a{color:white;margin-top:-5px;border-top:5px solid #902f2a;}
+			li a{border-top:none;margin-top:0px;padding:4px;}
+		} 
 		.active{
 			a{color:white;margin-top:-5px;border-top:5px solid #902f2a;}
 			li a{border:none;color:white;margin:0;border-bottom:10px solid black;}	
