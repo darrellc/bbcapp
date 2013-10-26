@@ -117,7 +117,7 @@ $(document).ready(function(){
 	$(document).click(function (e) {
 		var p = $("#menuPanelButton").parent();
         if ($(e.target).closest('#menuPanelButton').length > 0 || $(e.target).closest(p).length > 0) return;
-        	$(p).animate({left: "-200px"},300);
+        	$(p).animate({left: "-220px"},300);
     });
 	
 });
