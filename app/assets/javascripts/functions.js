@@ -103,11 +103,11 @@ $(document).ready(function(){
 		$(this).find(".bar").animate({width: "20px"}, 100);
 		
 	});
-	$("#menuPanelButton").popover("show");
+	$("#menuPanelButton").popover();
 	$("#menuPanelButton").click(function(){
 		var p = $(this).parent();
 		if($(p).css("left") === "0px")
-			$(p).animate({left: "-200px"}, 300);
+			$(p).animate({left: "-220px"}, 300);
 		else
 			$(p).animate({left: "0px"}, 300);
 	});
