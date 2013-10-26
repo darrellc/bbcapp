@@ -4,7 +4,7 @@
 			<% cnt = 0 %>
 			<% @picture_data.each do |pd| %>
 				<h3><a href="<%= pd[:link] %>"><%= pd[:name] %></a></h3>
-				<div class="photoAlbumSlider" style="width:400px;margin:auto;">
+				<div class="photoAlbumSlider flexslider" style="width:400px;margin:auto;">
 					
 					<ul class="slides">
 						<% pd[:data].each do |i| %>
