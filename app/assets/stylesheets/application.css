@@ -72,7 +72,7 @@ body{background-color:#fff;;background-repeat:repeat;}
 	width:100%;
 	margin:auto;
 	position:absolute;
-	top:220px;
+	bottom:0px;
 }
 .topMenu ul{list-style:none;width:100%;max-width:1008px;margin:auto;position:relative;background:#2a1f17;}
 .topMenu ul li{
