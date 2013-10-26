@@ -77,6 +77,11 @@ $(document).ready(function(){
 	
 	$("#homePageSlider").flexslider({
 		animation: "slide",
+		controlNav: "false",
+		directionNav: "false",
+		prevTest: "",
+		nextText: "",
+		touch: true		
 	});	
 	
 	$('.photoAlbumSlider').flexslider({

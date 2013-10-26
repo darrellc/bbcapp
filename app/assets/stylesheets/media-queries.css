@@ -3,17 +3,6 @@
 
 /****MEDIA QUERIES*****/
 /***********************/
-/* Smartphones (portrait and landscape) ----------- */
-@media screen and (max-width:1024px) {
-	
-}
-@media screen and (max-width: 980px) {
-	
-/* Styles */
-	#content{padding:0px;width:100%;box-shadow:none;}
-	
-}
-
 /* Smartphones (landscape) ----------- */
 @media screen and (max-width: 932px) {
 /* Styles */
