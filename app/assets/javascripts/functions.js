@@ -75,23 +75,8 @@ $(document).ready(function(){
 		}
 	});
 	
-	$("#homePageCarousel").flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: false,
-		animationLoop: true,
-		slideshow: true,
-		itemWidth: 210,
-		itemMargin: 5,
-		asNavFor: "#homePageSlider"
-	});
-	
 	$("#homePageSlider").flexslider({
 		animation: "slide",
-		controlNav: false,
-		animationLoop: true,
-		slideshow: true,
-		sync: "#homPageCarousel"
 	});	
 	
 	$('.photoAlbumSlider').flexslider({
