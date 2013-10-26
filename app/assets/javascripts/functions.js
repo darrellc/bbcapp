@@ -105,14 +105,15 @@ $(document).ready(function(){
 	});
 	$("#menuPanelButton").popover();
 	$("#menuPanelButton").click(function(){
+		var menu = $("#menuPanel");
+		$(menu).css("height", $(window).height());
 		var p = $(this).parent();
 		if($(p).css("left") === "0px")
 			$(p).animate({left: "-220px"}, 300);
 		else
 			$(p).animate({left: "0px"}, 300);
 	});
-	var menu = $("#menuPanel");
-	$(menu).css("height", $(window).height());
+	
 	
 	$(document).click(function (e) {
 		var p = $("#menuPanelButton").parent();
