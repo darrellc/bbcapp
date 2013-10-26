@@ -77,9 +77,8 @@ $(document).ready(function(){
 	
 	$("#homePageSlider").flexslider({
 		animation: "slide",
-		controlNav: "false",
-		directionNav: "false",
-		prevTest: "",
+		controlNav: false,
+		prevText: "",
 		nextText: "",
 		touch: true		
 	});	
