@@ -43,6 +43,7 @@ $(document).ready(function(){
 			}			
 		});
 		$(anchorTag).bind("click", function(){
+			
 			if($(this).next().is(":visible")){
 				if(!$(this).parent().hasClass("selected") ){
 					animateDown(this);
@@ -61,10 +62,8 @@ $(document).ready(function(){
 				$(this).parent().addClass("active");
 				$(this).next().slideDown();				
 				animateUp(this);				
-				
-				
-				
 			}
+			return false;
 		});
 		var w = $(window).width();
 		console.log(w);

@@ -87,7 +87,7 @@ body{background-color:#fff;;background-repeat:repeat;}
 	margin:auto;
 	position:relative;
 	max-width:1008px;
-	img{padding:20px 35px;}
+	img{padding:5px 4px;}
 	.headerTop{padding:5px 0px; font-family:Georgia, "Times New Roman", Times, serif;border-top:6px solid #ddba50;background:white;-webkit-box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, .8);box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, .8);
 		li{font-style:italic;padding:0px 20px;color:#002240;}
 	}
@@ -100,6 +100,11 @@ body{background-color:#fff;;background-repeat:repeat;}
 				}
 			}
 		}
+	}
+	.welcomeSlogan{
+	  position:absolute;
+	  top:60px;
+	  right:150px;
 	}	
 }
 .topMenu{
@@ -114,9 +119,10 @@ body{background-color:#fff;;background-repeat:repeat;}
 				color:#cccccc;
 				text-decoration:none;
 				padding:9px 5px;
-			    filter: dropshadow(color=#cdd577, offx=2, offy=2);
+		    filter: dropshadow(color=#cdd577, offx=2, offy=2);
 				display:block;
 				text-transform:uppercase;
+				border-top:5px solid #2a1f17;
 				&:hover{color:white;}
 			}
 			ul{position:absolute;top:51px;width:100%;display:none;left:0px;background:none;

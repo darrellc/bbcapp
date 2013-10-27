@@ -9,8 +9,9 @@
 	#Buttons p img{width:200px;height:134px;padding:8px;}
 	#imageFader{
 		display:none;
-	}	
-	padding-right:20px;
+	}
+	.headerWrapper .welcomeSlogan{right:0px;}
+	#content{padding:0;}
 }
 /*Mid range resolution check */
 @media screen and (max-width:750px){
@@ -26,13 +27,14 @@
 	body{padding:0;}
 	#Buttons p img{padding:3px;}
 	.headerWrapper{width:100%;}
+	.headerWrapper .welcomeSlogan{display:none;}
 	#header{
 		width:100%;
 	}
 	.logo{
 		clear:both;
 		position:relative;
-		width:100px;
+		width:150px;
 	}
 	.topMenu ul li a{padding:7px 5px 10px 5px;font-size:12px;}
 	
@@ -71,10 +73,12 @@
 	.logo img{width:100px;padding:20px 0px 20px 0px;margin:auto;}
 	.topMenu ul li{padding:0;width:100%;}
 	.topMenu ul li a{padding: 3px 1px 3px 1px;font-size:9px;}
-	.topMenu ul li ul{position:relative;}
+	.topMenu ul li ul{position:relative;top:0px;}
 	.topMenu ul li ul li{width:100%;}
-	.topMenu ul li ul li a{width:100%}
+	.topMenu ul li ul li a{width:100%;border-bottom:3px solid black;}
 	.topMenu ul{width:100%; margin:auto;min-width:290px}
+	.topMenu ul .active li a{border-bottom:3px solid black;}
+	.topMenu ul .active li a:hover{border-bottom:3px solid #902f2a;}
 	#imageFader{
 		display:none;
 		position:absolute;
