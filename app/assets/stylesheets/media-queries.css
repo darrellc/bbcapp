@@ -11,7 +11,7 @@
 		display:none;
 	}
 	.headerWrapper .welcomeSlogan{right:0px;}
-	#content{padding:0;}
+	#contentWrapper #content{padding:0;}
 }
 /*Mid range resolution check */
 @media screen and (max-width:750px){
