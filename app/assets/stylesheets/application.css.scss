@@ -104,7 +104,7 @@ body{background-color:#fff;;background-repeat:repeat;}
 	.welcomeSlogan{
 	  position:absolute;
 	  top:60px;
-	  right:425px;
+	  left:425px;
 	}	
 }
 .topMenu{
@@ -135,7 +135,7 @@ body{background-color:#fff;;background-repeat:repeat;}
 		}
 		li.selected{
 			a{color:white;margin-top:-5px;border-top:5px solid #902f2a;padding-bottom:14px;}
-			li a{border-bottom:10px solid black;border-top:none;margin-top:0px;}
+			li a{border-bottom:10px solid black;border-top:none;margin-top:0px;padding:4px;}
 		} 
 		.active{
 			a{color:white;margin-top:-5px;border-top:5px solid #902f2a;}
