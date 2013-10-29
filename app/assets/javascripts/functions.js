@@ -19,6 +19,7 @@ $(document).ready(function(){
 	//});
 	$("#contentWrapper .btn-group ul").first().addClass("dropdown-menu pull-right");
 	//$("#videoOverlay").fancybox().trigger('click');
+	$("nav#menu").children("ul").addClass("clearfix");
 	var child = $(".topMenu .menu").children();
 	list = $(child).children();
 	$(list).each(function(){
