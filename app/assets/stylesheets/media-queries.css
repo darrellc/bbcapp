@@ -71,14 +71,7 @@
 	}
 	.logo{text-align:center;width:100%;}
 	.logo img{width:100px;padding:20px 0px 20px 0px;margin:auto;}
-	.topMenu ul li{padding:0;width:100%;}
-	.topMenu ul li a{padding: 3px 1px 3px 1px;font-size:9px;}
-	.topMenu ul li ul{position:relative;top:0px;}
-	.topMenu ul li ul li{width:100%;}
-	.topMenu ul li ul li a{width:100%;border-bottom:3px solid black;}
-	.topMenu ul{width:100%; margin:auto;min-width:290px}
-	.topMenu ul .active li a{border-bottom:3px solid black;}
-	.topMenu ul .active li a:hover{border-bottom:3px solid #902f2a;}
+	.topMenu{display: none;}
 	#imageFader{
 		display:none;
 		position:absolute;
