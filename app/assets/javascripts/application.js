@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require jquery.flexslider-min
 //= require bootstrap.min
+//= require map_plugin/js/raphael
+//= require map_plugin/js/jquery.mousewheel
+//= require map_plugin/js/mapsvg.min
 //= require functions

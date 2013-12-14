@@ -68,6 +68,6 @@ group :production do
 end
 
 #google drive api
-gem 'google-api-client'
+#gem 'google-api-client'
 
 
