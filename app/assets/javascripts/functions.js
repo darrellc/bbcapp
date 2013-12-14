@@ -124,9 +124,11 @@ $(document).ready(function(){
 	
 	//Missions map
 	$('#missions-map').mapSvg({
-									source: '/assets/maps/world_high.svg',
-									width: "100%"
-							  });
+		source: '/assets/maps/world_high.svg',
+		width: "928",
+		height: "501",
+		tooltipsMode: 'custom'
+    });
 				
 });
 
