@@ -121,6 +121,9 @@ $(document).ready(function(){
         	$(p).animate({left: "-220px"},300);
     });
 	
+	
+	
+	
 });
 
 function animateDown(e){
