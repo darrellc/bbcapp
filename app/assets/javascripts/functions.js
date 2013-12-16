@@ -141,7 +141,7 @@ $(document).ready(function(){
 	        }
 	        m.showPopover(e,'<h2>'+options.name+'</h2><h4>'+options.email+'</h4>');
 	        
-	    }
+	    },
 		regions: {			
 			'Australia':{
 				tooltip: "The Paul's",
