@@ -128,6 +128,20 @@ $(document).ready(function(){
 		width: "953",
 		height: "501",
 		tooltipsMode: 'custom',
+		onClick: function(e,m){
+			var options = {};
+	        if(this.node.id=='Canada'){
+	        	options = {name: "The Lalondes", img: "", email: "tflqc1@total.net"};
+	        }else if(this.node.id=='Australia'){
+	        	options = {name: "The Pauls", img: "", email: "dabpaul@hotmail.com", website: "www.bbfi-oceania.org/Paul/"};
+	        }else if(this.node.id=='Togo'){
+	        	options = {name: "The Medikors", img: "", email: "kafjj@yahoo.com"};
+	        }else if(this.node.id=='India'){
+	        	options = {name: "The Thompsons", img: "", email: "thomsonthakadiel@yahoo.co.in"};
+	        }
+	        m.showPopover(e,'<h2>'+options.name+'</h2><h4>'+options.email+'</h4>');
+	        
+	    }
 		regions: {			
 			'Australia':{
 				tooltip: "The Paul's",
