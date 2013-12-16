@@ -127,7 +127,7 @@ $(document).ready(function(){
 		source: '/assets/maps/world_high.svg',
 		width: "953",
 		height: "501",
-		tooltipsMode: 'custom'
+		tooltipsMode: 'custom',
 		regions: {			
 			'Australia':{
 				tooltip: "The Paul's",
@@ -140,7 +140,7 @@ $(document).ready(function(){
 			'Togo':{
 				tooltip: "The Midekor's",
 				attr: {fill: '#A4DFA3'}
-			}
+			},
 				
 		}
     });
