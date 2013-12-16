@@ -128,6 +128,21 @@ $(document).ready(function(){
 		width: "953",
 		height: "501",
 		tooltipsMode: 'custom'
+		regions: {			
+			'Australia':{
+				tooltip: "The Paul's",
+				attr: {fill: '#F7D5BA'}
+			},
+			'Canada':{
+				tooltip: "The Lalonde's",
+				attr: {fill: '#F9DD7B'}
+			},
+			'Togo':{
+				tooltip: "The Midekor's",
+				attr: {fill: '#A4DFA3'}
+			}
+				
+		}
     });
 				
 });
