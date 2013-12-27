@@ -143,6 +143,11 @@ body{background-color:#fff;;background-repeat:repeat;}
 		}
 	}
 }
+.map_popover{
+  h2{font-size: 18px;color: #808080;line-height: 0px;}
+  h4 a{color: #08c;line-height: 14px;font-size: 14px;}
+  .map_popover_close{font-size: 25px;}
+}
 #contentWrapper{
 	width:100%;
 	margin:auto;

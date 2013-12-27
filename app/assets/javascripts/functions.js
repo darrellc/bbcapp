@@ -130,32 +130,27 @@ $(document).ready(function(){
 		tooltipsMode: 'custom',
 		onClick: function(e,m){
 			var options = {};
-	        if(this.node.id=='Canada'){
-	        	options = {name: "The Lalondes", img: "", email: "tflqc1@total.net"};
-	        }else if(this.node.id=='Australia'){
-	        	options = {name: "The Pauls", img: "", email: "dabpaul@hotmail.com", website: "www.bbfi-oceania.org/Paul/"};
-	        }else if(this.node.id=='Togo'){
-	        	options = {name: "The Medikors", img: "", email: "kafjj@yahoo.com"};
-	        }else if(this.node.id=='India'){
-	        	options = {name: "The Thompsons", img: "", email: "thomsonthakadiel@yahoo.co.in"};
+	        if(this.node.id === 'Canada'){
+	        	options = {name: "The Lalondes", img: "/assets/Missionaries/the_lalondes.jpg", email: "tflqc1@total.net"};
+	        	m.showPopover(e,'<h2>'+options.name+'</h2><h4><a href="mailto:'+options.email+'">'+options.email+'</a></h4><img src="'+options.img+'" style="height:150px;" />');m.showPopover(e,'<h2>'+options.name+'</h2><h4><a href="mailto:'+options.email+'">'+options.email+'</a></h4><img src="'+options.img+'" style="height:150px;" />');
+	        }else if(this.node.id === 'Australia'){
+	        	options = {name: "The Pauls", img: "/assets/Missionaries/the_pauls.jpg", email: "dabpaul@hotmail.com", website: "www.bbfi-oceania.org/Paul/"};
+	        	m.showPopover(e,'<h2>'+options.name+'</h2><h4><a href="mailto:'+options.email+'">'+options.email+'</a></h4><img src="'+options.img+'" style="height:150px;" />');
+	        }else if(this.node.id === 'Togo'){
+	        	options = {name: "The Medikors", img: "/assets/Missionaries/the_medikors.JPG", email: "kafjj@yahoo.com"};
+	        	m.showPopover(e,'<h2>'+options.name+'</h2><h4><a href="mailto:'+options.email+'">'+options.email+'</a></h4><img src="'+options.img+'" style="height:150px;" />');
+	        }else if(this.node.id === 'India'){
+	        	options = {name: "The Thompsons", img: "/assets/Missionaries/the_thompsons.jpg", email: "thomsonthakadiel@yahoo.co.in"};
+	        	m.showPopover(e,'<h2>'+options.name+'</h2><h4><a href="mailto:'+options.email+'">'+options.email+'</a></h4><img src="'+options.img+'" style="height:150px;" />');
 	        }
-	        m.showPopover(e,'<h2>'+options.name+'</h2><h4>'+options.email+'</h4>');
+	        
 	        
 	    },
 		regions: {			
-			'Australia':{
-				tooltip: "The Paul's",
-				attr: {fill: '#F7D5BA'}
-			},
-			'Canada':{
-				tooltip: "The Lalonde's",
-				attr: {fill: '#F9DD7B'}
-			},
-			'Togo':{
-				tooltip: "The Midekor's",
-				attr: {fill: '#A4DFA3'}
-			},
-				
+			'Australia':{tooltip: "Click Here",attr: {fill: '#F7D5BA'}},
+			'Canada':{tooltip: "Click Here", attr: {fill: '#F9DD7B'}},
+			'Togo':{tooltip: "Click Here", attr: {fill: '#333333'}},
+			'India':{tooltip: "Click Here", attr: {fill: '#ad84ff'}}				
 		}
     });
 				

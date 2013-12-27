@@ -1443,7 +1443,7 @@ var mapSVG = function(elem, options){
             if(!on) return false;
 
             // Add tooltip container
-            $("body").prepend('<div class="map_popover"><div class="map_popover_content"></div><div class="map_popover_close">x</div></div>');
+            $("body").prepend('<div class="map_popover"><div class="map_popover_content"></div><div class="map_popover_close">&times;</div></div>');
 
             _data.mapPopover = $('.map_popover');
 
