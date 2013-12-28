@@ -117,7 +117,6 @@ p, h1, h2, h3, h4, h5, a, li{font-family: 'Ubuntu';}
 	ul{list-style:none;width:100%;max-width:1008px;margin:auto;position:relative;
 		li{float:left;text-align:center;width:20%;
 			a{
-				font-family:"Helvetica, Arial, Sans-serif";
 				font-size:16px;
 				color:#cccccc;
 				text-decoration:none;
@@ -182,9 +181,9 @@ p, h1, h2, h3, h4, h5, a, li{font-family: 'Ubuntu';}
 				ul{margin:0;}
 				img{background:none;padding:0;box-shadow:none;-webkit-box-shadow:none;margin:0;}
 			}
-			.font-size-large{font-size:1.25em}
-			.font-size-normal{font-size:1.15em}
-			.font-size-small{font-size:1.0em}
+			.font-size-large{font-size:1.15em}
+			.font-size-normal{font-size:1em}
+			.font-size-small{font-size:0.9em}
 		}
 	}
 	section #body{
