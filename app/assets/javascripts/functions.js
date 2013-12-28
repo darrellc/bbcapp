@@ -125,7 +125,7 @@ $(document).ready(function(){
 	//Missions map
 	$('#missions-map').mapSvg({
 		source: '/assets/maps/world_high.svg',
-		width: "953",
+		width: "968",
 		height: "501",
 		tooltipsMode: 'custom',
 		onClick: function(e,m){
