@@ -93,30 +93,23 @@ $(document).ready(function(){
 	
 	var a = $("#sideMenuButton");
 	$(a).dropdown("toggle");
-	
-	$("#menuPanelButton").hover(function(){
-		var b = $(this).find(".bar");
-		$(b).animate({width: "25px"}, 100);
-		$(this).animate({right: "-35px"},100);
-	},function(){
-		$(this).animate({right: "-30px"}, 100);
-		$(this).find(".bar").animate({width: "20px"}, 100);
-		
-	});
 	$("#menuPanelButton").popover();
 	$("#menuPanelButton").click(function(){
-		var menu = $("#menuPanel");
-		$(menu).css("height", $(window).height());
-		var p = $(this).parent();
-		if($(p).css("left") === "0px")
-			$(p).animate({left: "-220px"}, 300);
-		else
-			$(p).animate({left: "0px"}, 300);
+		var menu = $("#sideBar");
+		$("#menuPanel").css("height", $(window).height());
+		if($(menu).css("marginLeft") === "0px"){
+			$(menu).animate({marginLeft: "-220px"}, 300);
+			$("#page_container").animate({marginLeft: "0px"}, 300);
+		}else{
+			$(menu).animate({marginLeft: "0px"}, 300);
+			$("#page_container").css("position", "absolute");
+			$("#page_container").animate({marginLeft: "220px"}, 300);
+		}
 	});
 	
 	
 	$(document).click(function (e) {
-		var p = $("#menuPanelButton").parent();
+		var p = $("#sideBar");
         if ($(e.target).closest('#menuPanelButton').length > 0 || $(e.target).closest(p).length > 0) return;
         	$(p).animate({left: "-220px"},300);
     });

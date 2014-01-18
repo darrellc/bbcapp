@@ -1,23 +1,25 @@
 
 <div id="header">
-	<div class="headerWrapper">
+	<div class="headerWrapper clearfix">
+		
 		<div class="social">
 			<ul>
-				<li><%= image_tag("SocialIcons/facebook.png", :width => "20") %><%= link_to "Facebook", "https://www.facebook.com/pages/Bible-Baptist-Church-of-New-Egypt-NJ/167800076581376", :target => "_blank" %></li>
-				<li><%= image_tag("SocialIcons/twitter.png", :width => "20") %><%= link_to "Twitter", "https://twitter.com/DominickCuozzo", :target => "_blank" %></li>
-				<li><%= image_tag("SocialIcons/vimeo.png", :width => "20") %><%= link_to "Vimeo", "http://vimeo.com/user6420505", :target => "_blank" %></li>
+				<li><%= link_to image_tag("SocialIcons/facebook.png"), "https://www.facebook.com/pages/Bible-Baptist-Church-of-New-Egypt-NJ/167800076581376", :target => "_blank" %></li>
+				<li><%= link_to image_tag("SocialIcons/twitter.png"), "https://twitter.com/DominickCuozzo", :target => "_blank" %></li>
+				<li><%= link_to image_tag("SocialIcons/vimeo.png"), "http://vimeo.com/user6420505", :target => "_blank" %></li>
+				<li><%= link_to image_tag("SocialIcons/google.png"), "#", :target => "_blank" %></li>
 			</ul>
 		</div>
-		<div class="clear"></div>
-		<div class="welcomeSlogan">
-			<%= image_tag("welcome.png", :width=> "300") %>	
+		<div id="menuPanelButton">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
 		</div>
 		<div class="logo"> 
-			<%= link_to image_tag("dark_color_logo.png", :width => "200"), refinery.root_path %>
+			<%= link_to image_tag("transLogo.png"), refinery.root_path %>
        	</div>
     </div>	
 </div>
-<div class="clear"></div>
 <div class="topMenu">
 	<%= render(:partial => "/refinery/menu", :locals => {
 	             :dom_id => 'menu',

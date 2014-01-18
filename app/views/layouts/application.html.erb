@@ -5,8 +5,9 @@
   <body>
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <div id="page_container">
-    	<%= render(:partial => "/refinery/menu_panel") %>
+    <%= render(:partial => "/refinery/menu_panel") %>
+    <div id="page_container" style="float:left;width: 100%">
+    	
       <header id="header">
         <%= render '/refinery/header' -%>
       </header>
