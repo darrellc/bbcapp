@@ -89,11 +89,8 @@ p, h1, h2, h3, h4, h5, a, li{font-family: 'Ubuntu';}
 	.social{position:absolute;right:0px;top:20px;
 		ul{display:inline;list-style:none;margin: 0;padding: 0;
 			li{float:left;position:relative;padding: 5px;
-				a{font-size:14px;color:#888;display:block;background: white;border-radius: 4px;-webkit-border-radius: 4px;
-				  img{opacity: .8;filter:alpha(opacity=80);
-				    &:hover{opacity: 1;filter:alpha(opacity=100);}
-				  }
-					&:hover{color:white;}
+				a{font-size:14px;color:#888;display:block;background: white;border-radius: 4px;-webkit-border-radius: 4px;opacity: .8;filter:alpha(opacity=80);
+					&:hover{color:white;opacity: 1;filter:alpha(opacity=100);}
 				}
 			}
 		}
