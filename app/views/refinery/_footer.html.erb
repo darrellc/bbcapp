@@ -1,17 +1,55 @@
 <div id="footerWrapper">
 	<div id="footer">
-		<%= image_tag "bbcSlogan.png", :alt => "bbcSlogan", :width => "300", :id => "footerSloganImage" %>
-		<ul>
-			<li>
-				Bible Study Materials
-				<ul>
-					<li><a href="http://faithforthefamily.com/m/#/m/devotional/">Daily Devotional</li>
-					<li><a href="#">Where will you Spend Eternity?</a></li>
-					<li><a href="#">Online Bible</a></li>
-				</ul>
-			</li>
-			<li>Helpful Links</li>
-			
-		</ul>
+		<div class="row">
+		  <div class="col-xs-6 col-sm-3">
+		  	<p>Bible Study Materials</p>
+		  	<ul>
+				<li><a href="http://faithforthefamily.com/m/#/m/devotional/">Daily Devotional</li>
+				<li><a href="#">Where will you Spend Eternity?</a></li>
+				<li><a href="#">Online Bible</a></li>
+			</ul>
+		  </div>
+		  <div class="col-xs-6 col-sm-3">
+		  	<p>Christian Publications</p>
+			<ul>
+				<li><a href="http://www.faithforthefamily.com/">Faith for the Family</a></li>
+				<li><a href="http://www.thewordforlife.org">Word of Life</a></li>
+				<li><a href="http://www.strivingtogether.com/">Striving Together Publications</a></li>
+				<li><a href="http://www.bjupress.com/">BJU Press</a></li>
+				<li><a href="http://www.answersingenesis.org/ ">Answers in Genesis</a></li>					
+				<li><a href="http://www.christianbook.com/">Christian Books</a></li>
+			</ul>
+		  </div>
+		
+		  <!-- Add the extra clearfix for only the required viewport -->
+		  <div class="clearfix visible-xs"></div>
+		
+		  <div class="col-xs-6 col-sm-3">
+		  	<p>Christian Music</p>
+		  	<ul>					
+				<li><a href="http://www.rejoice.org">Rejoice Radio</a></li>
+				<li><a href="http://www.oldchristianradio.com/">Old Fashion Christian Radio</a></li>
+				<li><a href="http://www.majestymusic.com/">Majesty Music</a></li>
+				<li><a href="http://store.wilds.org/">The Wilds</a></li>					
+			</ul>
+		  </div>
+		  <div class="col-xs-6 col-sm-3">
+		  	<p>Member Resources</p>
+		  	<ul>
+		  		<li><a href="https://shininglighttech.com/main/SelectClient.asp?page=main/login.asp">Shining Light Database</a></li>
+		  		<li><a href="#">Music Ministry Schedule</a></li>
+		  		<li><a href="#">Church Calendar</a></li>
+		  	</ul>
+		  </div>
+		</div>
+		<div id="address" class="clearfix">
+			<%= image_tag("seal_grayscale.png", :width => "100", :height => "100", :class => "img") %>
+			<div class="info">
+				<p>Bible Baptist Church</p>
+				<p>8 Magnolia Ave</p>
+				<p>New Egypt, NJ 08533</p>
+			</div>
+			<%= image_tag "bbcSlogan.png", :alt => "bbcSlogan",:height => "100", :id => "footerSloganImage" %>
+		</div>
 	</div>
 </div>

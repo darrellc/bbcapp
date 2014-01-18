@@ -111,7 +111,8 @@ $(document).ready(function(){
 	$(document).click(function (e) {
 		var p = $("#sideBar");
         if ($(e.target).closest('#menuPanelButton').length > 0 || $(e.target).closest(p).length > 0) return;
-        	$(p).animate({left: "-220px"},300);
+        	$(p).animate({marginLeft: "-220px"},300);
+        	$("#page_container").animate({marginLeft: "0px"}, 300);
     });
 	
 	
