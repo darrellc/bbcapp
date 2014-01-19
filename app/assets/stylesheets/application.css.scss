@@ -183,9 +183,9 @@ $bbc_red: #902f2a;
 }
 #middleBackground{width:100%;background:url(/assets/Backgrounds/middleBackground.jpg) repeat-x;height:500px;position:absolute;z-index:-100;}
 #slider{height:100%;margin:auto;}
-#Buttons{padding: 40px 0px 20px 0px; margin:auto;clear:both;max-width:900px;
+#contentWrapper #content .inner #buttons{padding: 40px 0px 20px 0px; margin:auto;clear:both;max-width:900px;
 	p{margin:0;padding:0;}
-	img{background:white;padding:10px;-webkit-box-shadow:  0px 0px 15px 5px rgba(0, 0, 0, .6);box-shadow:  0px 0px 15px 5px rgba(0, 0, 0, .6);width:85%;}
+	img{padding:0px;margin:0;box-shadow:none;-webkit-box-shadow:none;}
 	.left{width:33%;float:left;text-align:center;}
 	.middle{width:33%;float:left;text-align:center;}
 	.right{width:33%;float:left;text-align:center;}
@@ -241,8 +241,6 @@ h1 em { font-style: normal; color: #999; }
 a { color: #888; text-decoration: none; }
 #videoOverlay{display:none;}
 
-/*Photo Gallery*/
-#buttons{display:none;}
 
 
 
