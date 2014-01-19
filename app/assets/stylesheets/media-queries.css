@@ -14,7 +14,7 @@
 	#contentWrapper #content{padding:0;}
 	#menuPanelButton{display: block;}
 	.topMenu{display:none;}
-	.headerWrapper .logo img{width:104px;height: 54px;padding: 5px;}
+	.headerWrapper .logo img{width:104px;padding: 5px;}
 	.headerWrapper .social{top: 12px;}
 }
 /*Mid range resolution check */
