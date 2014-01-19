@@ -201,24 +201,13 @@ $bbc_red: #902f2a;
      font-weight: bold;
      font-size: 18px;
   }
-  .col-xs-6{border-left:1px solid #ccc;height: 100%;
-    &:first-of-type{border: none;}
+  .col-xs-6{border-left:1px solid #ccc;
+    &:last-of-type{border-right: 1px solid #ccc;}
   }
 	ul{
 	  list-style: none;
 	  margin:0;
 	  padding-bottom: 10px;
-	  li{
-	   color: $bbc_red;
-	   text-transform:uppercase;
-	   font-weight: bold;
-	   font-size: 18px;
-	   ul{list-style: none;border: none;
-	     li{float: none;margin:0;padding:0;border:none;font-size: 12px;}
-	   }
-	   &:last-of-type{border-right: none;border-left: none;}
-	   &:first-of-type{padding-left: 0;border-left: none;border-right: none;} 
-	  }
 	}
 	#address{
 	  .img{float:left;}
@@ -227,7 +216,7 @@ $bbc_red: #902f2a;
 	  }
 	}
 	#footerSloganImage{position:absolute;bottom:0px;right:0px;}
-	a{text-transform: capitalize;color:#585858;text-decoration:none;font-size:14px;float:none;}
+	a{text-transform: capitalize;color:#585858;text-decoration:none;font-size:14px;text-align: center;float:none;}
 	a:hover{text-decoration:underline;}
 }
 /**********SUBPAGE ITEMS*******************/
