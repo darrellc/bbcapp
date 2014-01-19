@@ -184,7 +184,8 @@ $bbc_red: #902f2a;
 #middleBackground{width:100%;background:url(/assets/Backgrounds/middleBackground.jpg) repeat-x;height:500px;position:absolute;z-index:-100;}
 #slider{height:100%;margin:auto;}
 #contentWrapper #content .inner #buttons{
-  img{padding:0px;margin:0;box-shadow:none;-webkit-box-shadow:none;width: 100%;}
+  margin-top: 20px;
+  img{padding:0px;margin:0;box-shadow:none;-webkit-box-shadow:none;width: 100%;height: auto;}
 	
 }
 #footer .custom{padding-top: 15px;max-width:1008px;margin:auto;position:relative;}
