@@ -1,0 +1,21 @@
+<div id="contentWrapper">
+	<div id="content" style="margin-top: 75px;">
+		<section class="no_body_content_title no_side_body no_body_content_left no_body_content_right" id="body_content">
+			<section id="body">
+				<div class="inner">
+					<div id="sermons">
+						<%= @files %>
+						<% for f in @files %>
+							<audio controls>
+							  <source src="horse.ogg" type="audio/ogg">
+							  <source src="/<%= f %>" type="audio/mpeg">
+							Your browser does not support the audio element.
+							</audio>
+						<% end %>
+						
+					</div>
+				</div>
+			</section>
+		</section>		
+	</div>
+</div>

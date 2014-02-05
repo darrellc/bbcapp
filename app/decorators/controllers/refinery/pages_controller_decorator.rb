@@ -3,10 +3,9 @@ require "uri"
 
 Refinery::PagesController.class_eval do
   
-  skip_before_filter :find_page, :only => [:photo_gallery]
+  skip_before_filter :find_page, :only => [:photo_gallery, :sermons]
   
   def photo_gallery
-    puts "HELLO"
     
     #Get all albums
     #https://graph.facebook.com/167800076581376/albums    
@@ -50,5 +49,14 @@ Refinery::PagesController.class_eval do
       @picture_data.push(picture)  
     end
     
-  end 
+  end
+  
+  def sermons
+    #@files = Dir.glob('audio/')
+    ##for file in @files
+    #  puts file
+    #  puts "<<<<<<<<<<<<<<<<<"
+    #end
+  end
+   
 end

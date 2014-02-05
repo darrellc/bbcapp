@@ -1,20 +1,28 @@
 <div id="contentWrapper">
-	<div id="content">
-		<div id="photo_galleries">
-			<% cnt = 0 %>
-			<% @picture_data.each do |pd| %>
-				<h3><a href="<%= pd[:link] %>"><%= pd[:name] %></a></h3>
-				<div class="photoAlbumSlider flexslider" style="width:400px;margin:auto;">
-					
-					<ul class="slides">
-						<% pd[:data].each do |i| %>
-							<% d = i["images"][4]%>
-							<li><img src="<%= d["source"] %>" ></li>
-						<% end %>						
-					</ul>
+	<div id="content" style="margin-top: 75px;">
+		<section class="no_body_content_title no_side_body no_body_content_left no_body_content_right" id="body_content">
+			<section id="body">
+				<div class="inner">
+					<div id="photo_galleries">
+						<% cnt = 0 %>
+						<% @picture_data.each do |pd| %>
+							<h3><a href="<%= pd[:link] %>"><%= pd[:name] %></a></h3>
+							<div class="photoAlbumSlider flexslider" style="width:400px;margin:auto;">
+								
+								<ul class="slides">
+									<% pd[:data].each do |i| %>
+										<% d = i["images"][4]%>
+										<% if !d.nil? %>
+											<li><img src="<%= d["source"] %>" ></li>
+										<% end %>
+									<% end %>						
+								</ul>
+							</div>
+						<% end %>
+					</div>
 				</div>
-			<% end %>
-		</div>
+			</section>
+		</section>		
 	</div>
 </div>
 

@@ -1,80 +1,52 @@
 
 $(document).ready(function(){
-	$(".middle .newsflash h4").click(function(){
-		//display the  child ul
-		$(".middle .newsflash h4").each(function(){
-			var n = $(this).next('ul');
-			n.slideUp();
+	//Show the select menu items submenu
+	$("#menu li.selected ul").show();
+	//Flex slider home page slideshow
+	var ul = $("#menu").children();
+	var listItems = $(ul).children();
+	
+	$(listItems).each(function(){
+		var anchor = $(this).children("a");
+		var siblings = $(this).siblings();
+		var subMenuItems = $(anchor).next().children();
+		$(subMenuItems).each(function(){
+			$(this).css("width", (100/subMenuItems.length).toString()+"%");
 		});
-		var n = $(this).next('ul');
-		if(n.css('display') == 'block') n.slideUp();
-		else{n.slideDown();}
-	});
-	$(".topMenu ul li ul li:last-child a").each(function(){
-		$(this).addClass('last-child');
-	});
-	//$("#videoOverlay").fancybox({
-	//	centerOnScroll : true,
-	//	modal : true	
-	//});
-	$("#contentWrapper .btn-group ul").first().addClass("dropdown-menu pull-right");
-	//$("#videoOverlay").fancybox().trigger('click');
-	$("nav#menu").children("ul").addClass("clearfix");
-	var child = $(".topMenu .menu").children();
-	list = $(child).children();
-	$(list).each(function(){
-		if($(this).hasClass("selected") ){
-			$(this).children("ul").show();
-		}
-		var anchorTag = $(this).children()[0];
-		$(anchorTag).bind("mouseenter", function(){
-			if(!$(this).parent().hasClass("selected") ){
-				if(!$(this).parent().hasClass("active") ){
-					animateUp(this);
-				}					
+		$(anchor).bind("click", function(){			
+			var subMenu = $(this).next();
+			if($(this).parent().hasClass("selected")){
+				$("#menu ul li ul").slideUp("fast");
+				$(subMenu).slideDown("fast");
+				return;
 			}
-				
-			
-		});
-		$(anchorTag).bind("mouseleave", function(){
-			if(!$(this).parent().hasClass("selected") ){
-				if(!$(this).parent().hasClass("active") ){
-					animateDown(this);
-				}					
-			}			
-		});
-		$(anchorTag).bind("click", function(){
-			
-			if($(this).next().is(":visible")){
-				if(!$(this).parent().hasClass("selected") ){
-					animateDown(this);
-					$(this).next().slideUp();
-					$(this).parent().removeClass("active");	
-				}					
+			if(subMenu.length === 0){
+				return true;
 			}else{
-				$(list).each(function(){
-					if( !$(this).hasClass("selected") ){
-						animateDown($(this).children()[0]);
-					}
+				if($(subMenu).is(":visible")){animateDown(this);$(subMenu).slideUp();return;}				
+				$("#menu ul li ul").slideUp("fast");
+				$(listItems).children("a").removeClass("active");
+				animateUp(this);
+				$(siblings).children("a").each(function(){
+					if($(this).parent().hasClass("selected")){return;}
+					animateDown(this);
 					$(this).removeClass("active");
 				});
-				var ul = $(".topMenu li ul");
-				$(ul).slideUp("fast");
-				$(this).parent().addClass("active");
-				$(this).next().slideDown();				
-				animateUp(this);				
+				$(subMenu).slideDown("fast");
+				$(this).addClass("active");
+				return false;	
 			}
-			return false;
 		});
-		var w = $(window).width();
-		console.log(w);
-		if(w > 460){
-			var childListItem = $(anchorTag).next().children();
-			var percent = 100 / childListItem.length;
-			$(childListItem).css("width", percent.toString() + "%");
-		}
+		$(anchor).bind("mouseenter",function(){
+			if($(this).parent().hasClass("selected")){return;}
+			animateUp(this);
+		});
+		$(anchor).bind("mouseleave", function(){
+			if($(this).parent().hasClass("selected") || $(this).hasClass("active")){return;}
+			animateDown(this);
+		});
 	});
-	
+
 	$("#homePageSlider").flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -82,7 +54,7 @@ $(document).ready(function(){
 		nextText: "",
 		touch: true		
 	});	
-	
+ 	
 	$('.photoAlbumSlider').flexslider({
 	    animation: "slide",
 	    smoothHeight: true,
@@ -90,10 +62,7 @@ $(document).ready(function(){
 	    controlNav: false,
 	    slideshow: false
 	});
-	
-	var a = $("#sideMenuButton");
-	$(a).dropdown("toggle");
-	$("#menuPanelButton").popover();
+ 	
 	$("#menuPanelButton").click(function(){
 		var menu = $("#sideBar");
 		$("#menuPanel").css("height", $(window).height());
@@ -106,21 +75,18 @@ $(document).ready(function(){
 			$("#page_container").animate({marginLeft: "220px"}, 300);
 		}
 	});
-	
-	
 	$(document).click(function (e) {
 		var p = $("#sideBar");
         if ($(e.target).closest('#menuPanelButton').length > 0 || $(e.target).closest(p).length > 0) return;
         	$(p).animate({marginLeft: "-220px"},300);
         	$("#page_container").animate({marginLeft: "0px"}, 300);
     });
-	
-	
 	//Missions map
 	$('#missions-map').mapSvg({
 		source: '/assets/maps/world_high.svg',
 		width: "968",
 		height: "501",
+		responsive: true,
 		tooltipsMode: 'custom',
 		onClick: function(e,m){
 			var options = {};

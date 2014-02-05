@@ -67,7 +67,5 @@ group :production do
 	gem 'fog'
 end
 
-#google drive api
-#gem 'google-api-client'
-
+gem 'thin'
 
