@@ -6,22 +6,21 @@
 /* Smartphones (landscape) ----------- */
 @media screen and (max-width: 932px) {
 /* Styles */
-	#Buttons p img{width:200px;height:134px;padding:8px;}
 	#imageFader{
 		display:none;
 	}
 	.headerWrapper .welcomeSlogan{right:0px;}
-	#contentWrapper #content{padding:0;}
+	#contentWrapper #content{padding:0;margin-top: 0px;}
 	#menuPanelButton{display: block;}
 	.topMenu{display:none;}
+	#contentWrapper #content.lowContent{margin-top:0px;}
 	.headerWrapper .logo img{width:104px;padding: 5px;}
 	.headerWrapper .social{top: 12px;}
+	#footerSloganImage{display:none;}
 }
 /*Mid range resolution check */
 @media screen and (max-width:750px){
 	body{padding:0;}
-	#Buttons p img{width:150px;height:100px;padding:5px;}
-	.topMenu ul li ul li a{font-size:12px;}
 }
 /* Smartphones (portrait) ----------- */
 @media screen and (max-width: 630px) {
@@ -35,7 +34,7 @@
 	
 	
 	#footer{min-width:100px;}
-	#footerSloganImage{display:none;}
+	
 }
 @media screen and (max-width:520px){
 	body{padding:0;}
@@ -69,13 +68,5 @@
 	#footer a{clear:both;}
 	#footer .custom{width:220px;position:initial;}
 	#footer p{float:left;}
-	#footer #footerSloganImage{right:0px;bottom:0px;}
-}
-
-@media screen and (max-width:425px) {
-	.topMenu ul li ul li a{font-size:10px;padding-left:3px;padding-right:3px;}
-}
-@media screen and (max-width:345px) {
-	.social{display: none;}
-	.logo img{float:right;}
+	#contentWrapper #content.subPages img{display: none;}
 }

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="speakers">
+    <% @speakers.each do |speaker| %>
+      <li>
+        <%= link_to speaker.name, refinery.sermons_speaker_path(speaker) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

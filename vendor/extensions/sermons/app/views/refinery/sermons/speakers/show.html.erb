@@ -1,0 +1,31 @@
+<% content_for :body_content_title do %>
+  <%= @speaker.name %>
+<% end %>
+
+<% content_for :body do %>
+
+  <section>
+    <h1>Name</h1>
+    <p>
+
+      <%=raw @speaker.name %>
+
+    </p>
+  </section>
+
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="speakers">
+      <% @speakers.each do |speaker| %>
+        <li>
+          <%= link_to speaker.name, refinery.sermons_speaker_path(speaker) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

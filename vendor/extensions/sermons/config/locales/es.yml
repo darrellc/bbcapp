@@ -1,0 +1,100 @@
+es:
+  refinery:
+    plugins:
+      speakers:
+        title: Speakers
+      services:
+        title: Services
+      sermon_groups:
+        title: Sermon Groups
+      sermons:
+        title: Sermons
+    sermons:
+      admin:
+        speakers:
+          actions:
+            create_new: Crear nuevo speaker
+            reorder: Reordenar speakers
+            reorder_done: Reordenación de speakers completada
+          records:
+            title: Speakers
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay speakers todavía. Pulsa en "Crear nuevo Speaker"
+              para crear tu primer speaker.
+          speaker:
+            view_live_html: Ver este speaker como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este speaker
+            delete: Borrar este speaker para siempre
+        services:
+          actions:
+            create_new: Crear nuevo service
+            reorder: Reordenar services
+            reorder_done: Reordenación de services completada
+          records:
+            title: Services
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay services todavía. Pulsa en "Crear nuevo Service"
+              para crear tu primer service.
+          service:
+            view_live_html: Ver este service como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este service
+            delete: Borrar este service para siempre
+        sermons:
+          actions:
+            create_new: Crear nuevo sermon
+            reorder: Reordenar sermons
+            reorder_done: Reordenación de sermons completada
+          records:
+            title: Sermons
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay sermons todavía. Pulsa en "Crear nuevo Sermon" para
+              crear tu primer sermon.
+          sermon:
+            view_live_html: Ver este sermon como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este sermon
+            delete: Borrar este sermon para siempre
+      speakers:
+        show:
+          other: Otros speakers
+      services:
+        show:
+          other: Otros services
+      sermons:
+        show:
+          other: Otros sermons
+    events:
+      admin:
+        sermon_groups:
+          actions:
+            create_new: Crear nuevo sermon group
+            reorder: Reordenar sermon groups
+            reorder_done: Reordenación de sermon groups completada
+          records:
+            title: Sermon Groups
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay sermon groups todavía. Pulsa en "Crear nuevo Sermon
+              Group" para crear tu primer sermon group.
+          sermon_group:
+            view_live_html: Ver este sermon group como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este sermon group
+            delete: Borrar este sermon group para siempre
+      sermon_groups:
+        show:
+          other: Otros sermon groups
+  activerecord:
+    attributes:
+      refinery/sermons/speaker:
+        name: Name
+      refinery/sermons/service:
+        name: Name
+      refinery/events/sermon_group:
+        name: Name
+        start_date: Start Date
+      refinery/sermons/sermon:
+        title: Title
+        file: File
+        date: Date

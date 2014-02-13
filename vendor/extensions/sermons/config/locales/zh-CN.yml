@@ -1,0 +1,93 @@
+zh-CN:
+  refinery:
+    plugins:
+      speakers:
+        title: Speakers
+      services:
+        title: Services
+      sermon_groups:
+        title: Sermon Groups
+      sermons:
+        title: Sermons
+    sermons:
+      admin:
+        speakers:
+          actions:
+            create_new: 建立新的 Speaker
+            reorder: 对 Speakers 重新排序
+            reorder_done: 对 Speakers 的重新排序结束
+          records:
+            title: Speakers
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Speakers . 点击 "Add New Speaker" 创建一个speaker.
+          speaker:
+            view_live_html: 查看 speaker 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 speaker
+            delete: 永久删除 speaker
+        services:
+          actions:
+            create_new: 建立新的 Service
+            reorder: 对 Services 重新排序
+            reorder_done: 对 Services 的重新排序结束
+          records:
+            title: Services
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Services . 点击 "Add New Service" 创建一个service.
+          service:
+            view_live_html: 查看 service 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 service
+            delete: 永久删除 service
+        sermons:
+          actions:
+            create_new: 建立新的 Sermon
+            reorder: 对 Sermons 重新排序
+            reorder_done: 对 Sermons 的重新排序结束
+          records:
+            title: Sermons
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Sermons . 点击 "Add New Sermon" 创建一个sermon.
+          sermon:
+            view_live_html: 查看 sermon 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 sermon
+            delete: 永久删除 sermon
+      speakers:
+        show:
+          other: 其他 Speakers
+      services:
+        show:
+          other: 其他 Services
+      sermons:
+        show:
+          other: 其他 Sermons
+    events:
+      admin:
+        sermon_groups:
+          actions:
+            create_new: 建立新的 Sermon Group
+            reorder: 对 Sermon Groups 重新排序
+            reorder_done: 对 Sermon Groups 的重新排序结束
+          records:
+            title: Sermon Groups
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Sermon Groups . 点击 "Add New Sermon Group" 创建一个sermon
+              group.
+          sermon_group:
+            view_live_html: 查看 sermon group 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 sermon group
+            delete: 永久删除 sermon group
+      sermon_groups:
+        show:
+          other: 其他 Sermon Groups
+  activerecord:
+    attributes:
+      refinery/sermons/speaker:
+        name: Name
+      refinery/sermons/service:
+        name: Name
+      refinery/events/sermon_group:
+        name: Name
+        start_date: Start Date
+      refinery/sermons/sermon:
+        title: Title
+        file: File
+        date: Date

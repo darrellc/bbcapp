@@ -1,0 +1,41 @@
+
+<%= form_for [refinery, :sermons_admin, @sermon] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @sermon,
+              :include_object_name => true %>
+
+
+
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+
+
+
+  <div class='field'>
+    <%= f.label :file -%>
+    <%= render '/refinery/admin/resource_picker',
+               :f => f,
+               :field => :file_id,
+               :resource => @sermon.file -%>
+  </div>
+
+
+
+
+  <div class='field'>
+    <%= f.label :date -%>
+    <%= f.datetime_select :date -%>
+  </div>
+
+
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.sermons.admin.sermons.sermon'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @sermon.title) -%>
+<% end -%>
+

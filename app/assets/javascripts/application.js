@@ -17,4 +17,6 @@
 //= require map_plugin/js/raphael
 //= require map_plugin/js/jquery.mousewheel
 //= require map_plugin/js/mapsvg.min
+//= require jquery.fitvid
+//= require froogaloop.js
 //= require functions

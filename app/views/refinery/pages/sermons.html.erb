@@ -1,21 +1,52 @@
 <div id="contentWrapper">
-	<div id="content" style="margin-top: 75px;">
-		<section class="no_body_content_title no_side_body no_body_content_left no_body_content_right" id="body_content">
-			<section id="body">
-				<div class="inner">
-					<div id="sermons">
-						<%= @files %>
-						<% for f in @files %>
-							<audio controls>
-							  <source src="horse.ogg" type="audio/ogg">
-							  <source src="/<%= f %>" type="audio/mpeg">
-							Your browser does not support the audio element.
-							</audio>
-						<% end %>
+	<div id="content">
+		<section class="no_side_body no_body_content_left no_body_content_right" id="body_content">
+			<h1 id="body_content_title">Sermons</h1>			
+			<div class="sermons">
+				<div class="player clearfix">
+					<div class="controls clearfix">
+						<div class="audio">
+							<span id="previous" class="glyphicon glyphicon-backward"></span>
+						</div>
 						
+						<div class="audio playToggle" >
+							<span id="control" class="glyphicon glyphicon-pause"></span>
+						</div>
+						
+						<div class="audio">
+							<span id="next" class="glyphicon glyphicon-forward"></span>
+						</div>
 					</div>
+					<div class="information">
+						<p id="sermonTitle"></p>						
+					</div>	
+					<div class="audio slider clearfix">
+						<div class="clearfix">
+							<div id="currentTime" class="audioTime"></div>
+							<div id="finalTime" class="audioTime"></div>
+						</div>
+						<input type="range" id="seek" value="0" max="">
+						
+					</div>						
 				</div>
-			</section>
-		</section>		
+				<div class="playlists clearfix">
+					<% sermonCount = 0 %>
+					<% @sermons.each do |key, array| %>	
+					<div class="col-md-4 ">				
+						<div class="seriesContainer">
+							<h4><%= key %></h4>
+							<ul>
+								<% array.each do |s| %>
+									<li><a id="sermon<%= sermonCount%>" href="<%= s[:link] %>" data-count="<%= sermonCount %>" data-name="<%= s[:title] %>"><span class="glyphicon glyphicon-play"></span><%= s[:title] %></a></li>
+									<% sermonCount += 1 %>
+								<% end %>
+							</ul>
+						</div>
+					</div>
+					<% end %>
+					<input type="hidden" id="lastSermon" value="<%= sermonCount -= 1 %>" />	
+				</div>					
+			</div>
+		</section>
 	</div>
 </div>

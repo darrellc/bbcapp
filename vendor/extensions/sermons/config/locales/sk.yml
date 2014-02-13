@@ -1,0 +1,97 @@
+sk:
+  refinery:
+    plugins:
+      speakers:
+        title: Speakers
+      services:
+        title: Services
+      sermon_groups:
+        title: Sermon Groups
+      sermons:
+        title: Sermons
+    sermons:
+      admin:
+        speakers:
+          actions:
+            create_new: Pridať Speaker
+            reorder: Preusporiadať Speakers
+            reorder_done: Koniec radenia Speakers
+          records:
+            title: Speakers
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Speakers. Kliknite na "Pridať Speaker"
+              pre pridanie prvého speaker.
+          speaker:
+            view_live_html: Zobraziť náhľad speaker<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť speaker
+            delete: Zmazať speaker
+        services:
+          actions:
+            create_new: Pridať Service
+            reorder: Preusporiadať Services
+            reorder_done: Koniec radenia Services
+          records:
+            title: Services
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Services. Kliknite na "Pridať Service"
+              pre pridanie prvého service.
+          service:
+            view_live_html: Zobraziť náhľad service<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť service
+            delete: Zmazať service
+        sermons:
+          actions:
+            create_new: Pridať Sermon
+            reorder: Preusporiadať Sermons
+            reorder_done: Koniec radenia Sermons
+          records:
+            title: Sermons
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Sermons. Kliknite na "Pridať Sermon"
+              pre pridanie prvého sermon.
+          sermon:
+            view_live_html: Zobraziť náhľad sermon<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť sermon
+            delete: Zmazať sermon
+      speakers:
+        show:
+          other: Daľšie Speakers
+      services:
+        show:
+          other: Daľšie Services
+      sermons:
+        show:
+          other: Daľšie Sermons
+    events:
+      admin:
+        sermon_groups:
+          actions:
+            create_new: Pridať Sermon Group
+            reorder: Preusporiadať Sermon Groups
+            reorder_done: Koniec radenia Sermon Groups
+          records:
+            title: Sermon Groups
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Sermon Groups. Kliknite na "Pridať
+              Sermon Group" pre pridanie prvého sermon group.
+          sermon_group:
+            view_live_html: Zobraziť náhľad sermon group<br/><em>(otvorí sa v novom
+              okne)</em>
+            edit: Upraviť sermon group
+            delete: Zmazať sermon group
+      sermon_groups:
+        show:
+          other: Daľšie Sermon Groups
+  activerecord:
+    attributes:
+      refinery/sermons/speaker:
+        name: Name
+      refinery/sermons/service:
+        name: Name
+      refinery/events/sermon_group:
+        name: Name
+        start_date: Start Date
+      refinery/sermons/sermon:
+        title: Title
+        file: File
+        date: Date

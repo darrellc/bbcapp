@@ -1,0 +1,53 @@
+<div id="contentWrapper">
+	
+	<div id="content" class="lowContent">
+		
+		<div id="videoPlayer">
+		  <ul class="slides">
+		  	<% count = 0 %>
+		  	
+		  	<% (0...@videos.length).step(2) do |i| %>
+		  		<% v = @videos[i] %>
+		  		<% v2 = @videos[i+1] %>		  		
+		  		<div class="row">
+		  			<div class="col-sm-6">	  		
+					    <a data-toggle="modal" href="#videoModal" class="clearfix" data-id="<%= v["id"]  %>">					    	
+				    		<img src="<%= v["thumbnail_small"] %>" />
+				    		<div class="info">
+				    			<p class="videoTitle"><%= v["title"] %></p>
+				    			<p>Click to Play</p>
+			    			</div>					    	
+				    	</a>
+			    	</div>
+			    	<div class="col-sm-6">
+				    	<a data-toggle="modal" href="#videoModal" class="clearfix" data-id="<%= v2["id"]%>">
+				    		<img src="<%= v2["thumbnail_small"] %>" />
+				    		<div class="info">
+				    			<p><%= v2["title"] %></p>
+				    			<p>Click to Play</p>
+			    			</div>
+		    			</a>
+			    	</div>			    			    	
+		    	</div>		    
+		    <% end %>
+		  </ul>
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="modal fade" id="videoModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+      	<div class="videoWrapper">
+        	<iframe src="//player.vimeo.com/video/50691978" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    	</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

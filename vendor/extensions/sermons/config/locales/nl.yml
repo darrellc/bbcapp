@@ -1,0 +1,100 @@
+nl:
+  refinery:
+    plugins:
+      speakers:
+        title: Speakers
+      services:
+        title: Services
+      sermon_groups:
+        title: Sermon Groups
+      sermons:
+        title: Sermons
+    sermons:
+      admin:
+        speakers:
+          actions:
+            create_new: Maak een nieuwe Speaker
+            reorder: Wijzig de volgorde van de Speakers
+            reorder_done: Klaar met het wijzingen van de volgorde van de Speakers
+          records:
+            title: Speakers
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Speakers. Druk op 'Maak een nieuwe Speaker'
+              om de eerste aan te maken.
+          speaker:
+            view_live_html: Bekijk deze speaker op de website <br/><em>(opent een
+              nieuw venster)</em>
+            edit: Bewerk deze speaker
+            delete: Verwijder deze speaker voor eeuwig
+        services:
+          actions:
+            create_new: Maak een nieuwe Service
+            reorder: Wijzig de volgorde van de Services
+            reorder_done: Klaar met het wijzingen van de volgorde van de Services
+          records:
+            title: Services
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Services. Druk op 'Maak een nieuwe Service'
+              om de eerste aan te maken.
+          service:
+            view_live_html: Bekijk deze service op de website <br/><em>(opent een
+              nieuw venster)</em>
+            edit: Bewerk deze service
+            delete: Verwijder deze service voor eeuwig
+        sermons:
+          actions:
+            create_new: Maak een nieuwe Sermon
+            reorder: Wijzig de volgorde van de Sermons
+            reorder_done: Klaar met het wijzingen van de volgorde van de Sermons
+          records:
+            title: Sermons
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Sermons. Druk op 'Maak een nieuwe Sermon'
+              om de eerste aan te maken.
+          sermon:
+            view_live_html: Bekijk deze sermon op de website <br/><em>(opent een nieuw
+              venster)</em>
+            edit: Bewerk deze sermon
+            delete: Verwijder deze sermon voor eeuwig
+      speakers:
+        show:
+          other: Andere Speakers
+      services:
+        show:
+          other: Andere Services
+      sermons:
+        show:
+          other: Andere Sermons
+    events:
+      admin:
+        sermon_groups:
+          actions:
+            create_new: Maak een nieuwe Sermon Group
+            reorder: Wijzig de volgorde van de Sermon Groups
+            reorder_done: Klaar met het wijzingen van de volgorde van de Sermon Groups
+          records:
+            title: Sermon Groups
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Sermon Groups. Druk op 'Maak een nieuwe
+              Sermon Group' om de eerste aan te maken.
+          sermon_group:
+            view_live_html: Bekijk deze sermon group op de website <br/><em>(opent
+              een nieuw venster)</em>
+            edit: Bewerk deze sermon group
+            delete: Verwijder deze sermon group voor eeuwig
+      sermon_groups:
+        show:
+          other: Andere Sermon Groups
+  activerecord:
+    attributes:
+      refinery/sermons/speaker:
+        name: Name
+      refinery/sermons/service:
+        name: Name
+      refinery/events/sermon_group:
+        name: Name
+        start_date: Start Date
+      refinery/sermons/sermon:
+        title: Title
+        file: File
+        date: Date

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="sermon_groups">
+    <% @sermon_groups.each do |sermon_group| %>
+      <li>
+        <%= link_to sermon_group.name, refinery.events_sermon_group_path(sermon_group) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

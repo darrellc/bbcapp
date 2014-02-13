@@ -3,6 +3,7 @@ Myapp::Application.routes.draw do
   Refinery::Core::Engine.routes.prepend do
     get '/media/photos', :to => 'pages#photo_gallery', :as => :photo_gallery
     get '/media/sermons', :to => 'pages#sermons', :as => :sermons
+    get '/media/videos', :to => "pages#videos", :as => :videos
   end
   
   

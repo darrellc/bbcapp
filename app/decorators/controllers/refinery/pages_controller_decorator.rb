@@ -1,9 +1,10 @@
 require "net/https"
 require "uri"
+require "rss"
 
 Refinery::PagesController.class_eval do
   
-  skip_before_filter :find_page, :only => [:photo_gallery, :sermons]
+  skip_before_filter :find_page, :only => [:photo_gallery, :sermons, :videos]
   
   def photo_gallery
     
@@ -52,11 +53,27 @@ Refinery::PagesController.class_eval do
   end
   
   def sermons
-    #@files = Dir.glob('audio/')
-    ##for file in @files
-    #  puts file
-    #  puts "<<<<<<<<<<<<<<<<<"
-    #end
+    @sermons = {}
+    feed = RSS::Parser.parse(open('http://bbcnewegyptnj.podbean.com/feed/').read, false).items
+    @feed = feed
+    for item in feed
+      if @sermons.has_key? item.category.content
+        @sermons[item.category.content].push({:title => item.title, :link => item.enclosure.url})
+      else
+        @sermons[item.category.content] = [{:title => item.title, :link => item.enclosure.url}]
+      end
+    end
   end
-   
+  
+  def videos
+    
+    #Get all videos
+    uri = URI.parse("http://vimeo.com/api/v2/user6420505/videos.json")
+    http = Net::HTTP.new(uri.host,uri.port)
+    request = Net::HTTP::Get.new(uri.request_uri)
+    
+    response=http.request(request)
+    @videos = JSON.parse(response.body)
+  end
+  
 end

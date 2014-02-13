@@ -1,0 +1,100 @@
+nb:
+  refinery:
+    plugins:
+      speakers:
+        title: Speakers
+      services:
+        title: Services
+      sermon_groups:
+        title: Sermon Groups
+      sermons:
+        title: Sermons
+    sermons:
+      admin:
+        speakers:
+          actions:
+            create_new: Lag en ny Speaker
+            reorder: Endre rekkefølgen på Speakers
+            reorder_done: Ferdig å endre rekkefølgen Speakers
+          records:
+            title: Speakers
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Speakers enda. Klikk på "Lag en ny Speaker"
+              for å legge til din første speaker.
+          speaker:
+            view_live_html: Vis hvordan denne speaker ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne speaker
+            delete: Fjern denne speaker permanent
+        services:
+          actions:
+            create_new: Lag en ny Service
+            reorder: Endre rekkefølgen på Services
+            reorder_done: Ferdig å endre rekkefølgen Services
+          records:
+            title: Services
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Services enda. Klikk på "Lag en ny Service"
+              for å legge til din første service.
+          service:
+            view_live_html: Vis hvordan denne service ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne service
+            delete: Fjern denne service permanent
+        sermons:
+          actions:
+            create_new: Lag en ny Sermon
+            reorder: Endre rekkefølgen på Sermons
+            reorder_done: Ferdig å endre rekkefølgen Sermons
+          records:
+            title: Sermons
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Sermons enda. Klikk på "Lag en ny Sermon" for
+              å legge til din første sermon.
+          sermon:
+            view_live_html: Vis hvordan denne sermon ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne sermon
+            delete: Fjern denne sermon permanent
+      speakers:
+        show:
+          other: Andre Speakers
+      services:
+        show:
+          other: Andre Services
+      sermons:
+        show:
+          other: Andre Sermons
+    events:
+      admin:
+        sermon_groups:
+          actions:
+            create_new: Lag en ny Sermon Group
+            reorder: Endre rekkefølgen på Sermon Groups
+            reorder_done: Ferdig å endre rekkefølgen Sermon Groups
+          records:
+            title: Sermon Groups
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Sermon Groups enda. Klikk på "Lag en ny Sermon
+              Group" for å legge til din første sermon group.
+          sermon_group:
+            view_live_html: Vis hvordan denne sermon group ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne sermon group
+            delete: Fjern denne sermon group permanent
+      sermon_groups:
+        show:
+          other: Andre Sermon Groups
+  activerecord:
+    attributes:
+      refinery/sermons/speaker:
+        name: Name
+      refinery/sermons/service:
+        name: Name
+      refinery/events/sermon_group:
+        name: Name
+        start_date: Start Date
+      refinery/sermons/sermon:
+        title: Title
+        file: File
+        date: Date

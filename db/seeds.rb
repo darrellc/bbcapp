@@ -8,3 +8,9 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Sermon Sets extension
+Refinery::SermonSets::Engine.load_seed
+
+# Added by Refinery CMS Speakers extension
+Refinery::Sermons::Engine.load_seed
